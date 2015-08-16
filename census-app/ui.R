@@ -8,7 +8,9 @@ shinyUI(fluidPage(
             helpText("Create demographic map with 
         information from the 2010 US Census."),
             helpText("Instructions: Select a demographic from the dropdown below and 
-        adjust the slider for the percentage range that you are interested in."),
+        adjust the slider for the percentage range that you are interested in. The 
+        map will update with the chosen parameters so that you can easily visualize
+        in which of the various US states the specified demographic resides."),
             
             selectInput("var", 
                         label = "Choose a demographic to display:",
