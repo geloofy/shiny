@@ -5,11 +5,13 @@ shinyUI(fluidPage(
     
     sidebarLayout(
         sidebarPanel(
-            helpText("Create demographic maps with 
+            helpText("Create demographic map with 
         information from the 2010 US Census."),
+            helpText("Instructions: Select a demographic from the dropdown below and 
+        adjust the slider for the percentage range that you are interested in."),
             
             selectInput("var", 
-                        label = "Choose a variable to display",
+                        label = "Choose a demographic to display:",
                         choices = c("Percent White", "Percent Black",
                                     "Percent Hispanic", "Percent Asian"),
                         selected = "Percent White"),
